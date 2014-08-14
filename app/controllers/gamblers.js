@@ -9,8 +9,9 @@ exports.index = function(req, res){
 };
 
 exports.pawn = function(req, res){
-  Gambler.findById(req.params.id, function(err, gambler){
+  Gambler.findById(req.params.id, function(gambler){
     gambler.removeAsset(req.params.name, function(obj){
+      console.log(obj);
       res.send({id:req.params.id, name:req.params.name, isDivorced:obj.isDivorced, cash:obj.cash});
     });
   });
