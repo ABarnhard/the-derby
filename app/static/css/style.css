@@ -38,14 +38,20 @@ nav li {
 
 .gambler {
   position:relative;
+  vertical-align: top;
   display: inline-block;
   overflow: hidden;
   background-color: white;
   margin: 5px;
   width: 300px;
-  height: 500px;
+  height: 100%;
   border: 2px solid black;
   border-radius: 20px;
+}
+
+.gambler div {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .photo, .spouse {
@@ -54,7 +60,19 @@ nav li {
   background-size: cover;
 }
 
-.spouse {
-  position: absolute;
-  bottom: 0px;
+.asset {
+  width: 200px;
+  height: 200px;
+  background-size:cover;
+  position: relative;
+  margin: 0 auto;
 }
+
+.info {
+  background-color: yellow;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+

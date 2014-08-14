@@ -8,16 +8,18 @@ block content
           .photo(style='background-image:url(#{gambler.photo});')
           .name= gambler.name
           .cash $#{gambler.cash.toFixed(2)}
-          .assets
-            ul
-              each asset in gambler.assets
-                li= asset.name
           .results
             ul
               li Wins: #{gambler.results.wins}
               li Losses: #{gambler.results.losses}
           .spouse(style='background-image:url(#{gambler.spouse.photo});')
             p= gambler.spouse.name
+          each asset in gambler.assets
+            .asset(style='background-image:url(#{asset.photo});')
+              .info
+                ul
+                  li= asset.name
+                  li $#{asset.value.toFixed(2)}
 
 block scripts
 
