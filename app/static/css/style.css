@@ -60,11 +60,12 @@ nav li {
 }
 
 .asset {
-  width: 200px;
+  width: 90%;
   height: 200px;
   background-size:cover;
   position: relative;
   margin: 0 auto;
+  border: 1px solid green;
 }
 
 .info {

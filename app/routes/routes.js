@@ -15,6 +15,7 @@ module.exports = function(app, express){
   app.get('/', home.index);
 
   app.get('/gamblers', gamblers.index);
+  app.delete('/gamblers/:id/assets/:name', gamblers.pawn);
 
   console.log('Routes Loaded');
 };
