@@ -35,7 +35,6 @@ Gambler.prototype.sellAsset = function(name){
       sold  = this.assets.splice(index, 1)[0];
 
   this.cash += sold.value;
-  this.isDivorced = this.assets.length === 0;
 };
 
 Gambler.all = function(cb){
