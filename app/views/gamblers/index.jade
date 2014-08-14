@@ -4,7 +4,7 @@ block content
     h2 Meet the players:
     #gamblers
       each gambler in gamblers
-        .gambler
+        .gambler(data-gambler-id=gambler._id.toString())
           .photo(style='background-image:url(#{gambler.photo});')
           .name= gambler.name
           .cash $#{gambler.cash.toFixed(2)}
@@ -16,10 +16,10 @@ block content
             p= gambler.spouse.name
           each asset in gambler.assets
             .asset(style='background-image:url(#{asset.photo});')
-              .info
+              .info(data-asset-name=asset.name)
                 ul
                   li= asset.name
                   li $#{asset.value.toFixed(2)}
 
 block scripts
-
+  script(src='/js/user/gambler.js')

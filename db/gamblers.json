@@ -5,17 +5,10 @@
   "spouse":{"name":"Sara Jones", "photo":"http://i8.cdnds.net/13/19/450x450/smiling-woman.jpg"},
   "cash":1000,
   "assets":[
-    {
-      "name":"ring",
-      "photo":"http://2.bp.blogspot.com/-N0HgVNj0VBQ/UhXJ6tlWuKI/AAAAAAAAA54/_wszOSMO-gU/s1600/gold-wedding-rings4.jpg",
-      "value":300
-  },
-    {
-      "name":"car",
-      "photo":"http://images.wisegeek.com/silver-car-isolated.jpg",
-      "value":10000
-    }
-  ],
+      {"name":"Ring", "photo":"http://www.houstondiamondoutlet.com/images/diamond_rings.jpg", "value":4000},
+      {"name":"House", "photo":"http://youveneverheardofjentidwell.files.wordpress.com/2012/03/house.jpg", "value":62000},
+      {"name":"Car", "photo":"http://www.picturesnew.com/media/images/car-image.jpg", "value":17000}
+    ],
   "results":{"wins":5, "losses":12}
 }
 {
@@ -28,17 +21,10 @@
   },
   "cash":10000,
   "assets":[
-    {
-      "name":"ring",
-      "photo":"http://2.bp.blogspot.com/-N0HgVNj0VBQ/UhXJ6tlWuKI/AAAAAAAAA54/_wszOSMO-gU/s1600/gold-wedding-rings4.jpg",
-      "value":300
-    },
-    {
-      "name":"car",
-      "photo":"http://images.wisegeek.com/silver-car-isolated.jpg",
-      "value":10000
-    }
-  ],
+      {"name":"Dog", "photo":"http://kp-dev.com/wp-content/uploads/2013/08/Pretty-Dogs-in-Garden-dogs-13905929-1920-1200.jpg", "value":3000},
+      {"name":"iMac", "photo":"http://images.amazon.com/images/G/01/electronics/apple/apple-imac2011_q2-270-main-lg.jpg", "value":600},
+      {"name":"Children", "photo":"http://photo.elsoar.com/wp-content/images/Big-group-of-happy-children-with-balloons.jpg", "value":500}
+    ],
   "results":{"wins":15, "losses":6}
 }
 {
@@ -51,16 +37,9 @@
   },
   "cash":0,
   "assets":[
-    {
-      "name":"ring",
-      "photo":"http://2.bp.blogspot.com/-N0HgVNj0VBQ/UhXJ6tlWuKI/AAAAAAAAA54/_wszOSMO-gU/s1600/gold-wedding-rings4.jpg",
-      "value":300
-    },
-    {
-      "name":"car",
-      "photo":"http://images.wisegeek.com/silver-car-isolated.jpg",
-      "value":10000
-    }
-  ],
+      {"name":"Soul", "photo":"http://www.ghoststudy.com/1aimages/Website21106.jpg", "value":250},
+      {"name":"Kidneys", "photo":"http://www.urologyhealth.org/urology/articles/images/anatomy_AdrenalsKidneys_Anterior.jpg", "value":7000},
+      {"name":"Parents", "photo":"http://www.smilestones.org/Images/parents.jpg", "value":47000}
+    ],
   "results":{"wins":0, "losses":50}
 }
