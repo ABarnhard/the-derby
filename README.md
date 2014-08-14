@@ -1,10 +1,10 @@
 ## name of project
 ### Code Badges
-build status icon
-coverage status icon
+[![Build Status](https://travis-ci.org/ABarnhard/the-derby.svg)](https://travis-ci.org/ABarnhard/the-derby)
+[![Coverage Status](https://coveralls.io/repos/ABarnhard/the-derby/badge.png)](https://coveralls.io/r/ABarnhard/the-derby)
 
 ### About
-write a description about your project
+Horse racing simulator built with Node & jQuery
 
 ### Models
 ```
@@ -35,7 +35,7 @@ $ npm test
 ```
 
 ### Contributors
-- [Chyld Medford](https://github.com/chyld)
+- [Adam Barnhard](https://github.com/abarnhard)
 
 ### License
 [MIT](LICENSE)
