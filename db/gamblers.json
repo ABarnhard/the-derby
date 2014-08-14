@@ -4,7 +4,6 @@
   "photo":"http://jimsmuse.files.wordpress.com/2008/05/gambler.jpg",
   "spouse":{"name":"Sara Jones", "photo":"http://i8.cdnds.net/13/19/450x450/smiling-woman.jpg"},
   "cash":1000,
-  "isDivorced":false,
   "assets":[
       {"name":"Ring", "photo":"http://www.houstondiamondoutlet.com/images/diamond_rings.jpg", "value":4000},
       {"name":"House", "photo":"http://youveneverheardofjentidwell.files.wordpress.com/2012/03/house.jpg", "value":62000},
@@ -21,7 +20,6 @@
     "photo":"http://photo.elsoar.com/wp-content/images/Happy-smiling-latin-man.jpg"
   },
   "cash":10000,
-  "isDivorced":false,
   "assets":[
       {"name":"Dog", "photo":"http://kp-dev.com/wp-content/uploads/2013/08/Pretty-Dogs-in-Garden-dogs-13905929-1920-1200.jpg", "value":3000},
       {"name":"iMac", "photo":"http://images.amazon.com/images/G/01/electronics/apple/apple-imac2011_q2-270-main-lg.jpg", "value":600},
@@ -38,7 +36,6 @@
     "photo":"http://www.parenthub.com.au/wp-content/uploads/56460615-Woman-laughing.jpg"
   },
   "cash":0,
-  "isDivorced":false,
   "assets":[
       {"name":"Soul", "photo":"http://www.ghoststudy.com/1aimages/Website21106.jpg", "value":250},
       {"name":"Kidneys", "photo":"http://www.urologyhealth.org/urology/articles/images/anatomy_AdrenalsKidneys_Anterior.jpg", "value":7000},
