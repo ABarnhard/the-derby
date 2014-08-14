@@ -1,0 +1,66 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Bob Jones",
+  "photo":"http://jimsmuse.files.wordpress.com/2008/05/gambler.jpg",
+  "spouse":{"name":"Sara Jones", "photo":"http://i8.cdnds.net/13/19/450x450/smiling-woman.jpg"},
+  "cash":1000,
+  "assets":[
+    {
+      "name":"ring",
+      "photo":"http://2.bp.blogspot.com/-N0HgVNj0VBQ/UhXJ6tlWuKI/AAAAAAAAA54/_wszOSMO-gU/s1600/gold-wedding-rings4.jpg",
+      "value":300
+  },
+    {
+      "name":"car",
+      "photo":"http://images.wisegeek.com/silver-car-isolated.jpg",
+      "value":10000
+    }
+  ],
+  "results":{"wins":5, "losses":12}
+}
+{
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Lindsay Jhonson",
+  "photo":"http://blackjackartists.com/img/Famous-Women.jpg",
+  "spouse":{
+    "name":"Greg Johnson",
+    "photo":"http://photo.elsoar.com/wp-content/images/Happy-smiling-latin-man.jpg"
+  },
+  "cash":10000,
+  "assets":[
+    {
+      "name":"ring",
+      "photo":"http://2.bp.blogspot.com/-N0HgVNj0VBQ/UhXJ6tlWuKI/AAAAAAAAA54/_wszOSMO-gU/s1600/gold-wedding-rings4.jpg",
+      "value":300
+    },
+    {
+      "name":"car",
+      "photo":"http://images.wisegeek.com/silver-car-isolated.jpg",
+      "value":10000
+    }
+  ],
+  "results":{"wins":15, "losses":6}
+}
+{
+  "_id":{"$oid":"000000000000000000000003"},
+  "name":"Ron Boberson",
+  "photo":"http://bigskygambler.com/wp-content/uploads/2013/02/losing-gambler.jpg",
+  "spouse":{
+    "name":"Lisa Boberson",
+    "photo":"http://www.parenthub.com.au/wp-content/uploads/56460615-Woman-laughing.jpg"
+  },
+  "cash":0,
+  "assets":[
+    {
+      "name":"ring",
+      "photo":"http://2.bp.blogspot.com/-N0HgVNj0VBQ/UhXJ6tlWuKI/AAAAAAAAA54/_wszOSMO-gU/s1600/gold-wedding-rings4.jpg",
+      "value":300
+    },
+    {
+      "name":"car",
+      "photo":"http://images.wisegeek.com/silver-car-isolated.jpg",
+      "value":10000
+    }
+  ],
+  "results":{"wins":0, "losses":50}
+}
