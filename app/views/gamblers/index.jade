@@ -1,0 +1,23 @@
+extends ../shared/template
+block content
+  .content
+    h2 Meet the players:
+    #gamblers
+      each gambler in gamblers
+        .gambler
+          .photo(style='background-image:url(#{gambler.photo});')
+          .name= gambler.name
+          .cash $#{gambler.cash.toFixed(2)}
+          .assets
+            ul
+              each asset in gambler.assets
+                li= asset.name
+          .results
+            ul
+              li Wins: #{gambler.results.wins}
+              li Losses: #{gambler.results.losses}
+          .spouse(style='background-image:url(#{gambler.spouse.photo});')
+            p= gambler.spouse.name
+
+block scripts
+

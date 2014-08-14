@@ -3,7 +3,8 @@
 var morgan         = require('morgan'),
     bodyParser     = require('body-parser'),
     methodOverride = require('express-method-override'),
-    home           = require('../controllers/home');
+    home           = require('../controllers/home'),
+    gamblers       = require('../controllers/gamblers');
 
 module.exports = function(app, express){
   app.use(morgan('dev'));
@@ -12,6 +13,8 @@ module.exports = function(app, express){
   app.use(methodOverride());
 
   app.get('/', home.index);
+
+  app.get('/gamblers', gamblers.index);
 
   console.log('Routes Loaded');
 };
