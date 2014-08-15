@@ -92,7 +92,7 @@ describe('Gambler', function(){
       Gambler.findById('000000000000000000000002', function(gambler){
         gambler.assets = [];
         gambler.sellAsset('Ring');
-        expect(gambler.cash).to.be.closeTo(1000, 0.1);
+        expect(gambler.cash).to.be.closeTo(10000, 0.1);
         expect(gambler.assets).to.have.length(0);
         done();
       });
