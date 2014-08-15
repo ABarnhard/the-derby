@@ -9,15 +9,34 @@ exports.index = function(req, res){
   });
 };
 
-exports.init = function(req, res){};
+exports.init = function(req, res){
+  res.render('gamblers/init');
+};
 
-exports.show = function(req, res){};
+exports.show = function(req, res){
+  Gambler.findById(req.params.id, function(gambler){
+    res.render('gamblers/show', {gambler:gambler});
+  });
+};
 
-exports.create = function(req, res){};
+exports.create = function(req, res){
+  var g = new Gambler(req.body);
+  g.save(function(){
+    res.redirect('/gamblers');
+  });
+};
 
-exports.initAsset = function(req, res){};
+exports.initAsset = function(req, res){
+  res.render('gamblers/init-asset');
+};
 
-exports.createAsset = function(req, res){};
+exports.createAsset = function(req, res){
+  Gambler.findById(req.params.id, function(gambler){
+    gambler.acquire(req.body, function(){
+      res.redirect('/gamblers/' + req.params.id);
+    });
+  });
+};
 
 exports.liquidate = function(req, res){
   Gambler.findById(req.params.id, function(gambler){

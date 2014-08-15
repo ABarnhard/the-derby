@@ -7,7 +7,7 @@ block content
         .gambler(data-gambler-id=gambler._id.toString())
           .photo(style='background-image:url(#{gambler.photo});')
           .stats
-            .name= gambler.name
+            .name: a(href='/gamblers/#{gambler._id}')= gambler.name
             .cash $#{gambler.cash.toFixed(2)}
             .results
               ul

@@ -1,0 +1,29 @@
+extends ../shared/template
+block content
+  h2 Create New Gambler:
+  form(method='post', action='/gamblers')
+    table
+      tbody
+        tr
+          td Name
+          td: input(name='name', type='text', placeholder='Ronald Boberson')
+        tr
+          td Photo
+          td: input(name='photo', type='text', placeholder='http://www.example.com/boberson.jpg')
+        tr
+          td Cash
+          td: input(name='cash', type='number', placeholder='1000')
+        tr
+          td(colspan='2') Spouse
+        tr
+          td Name
+          td: input(name='spouse[name]', type='text', placeholder='Ronald Boberson')
+        tr
+          td Photo
+          td: input(name='spouse[photo]', type='text', placeholder='http://www.example.com/boberson.jpg')
+        tr
+          td(colspan='2'): button Create Gambler!!
+
+
+block scripts
+
