@@ -27,7 +27,7 @@ exports.create = function(req, res){
 };
 
 exports.initAsset = function(req, res){
-  res.render('gamblers/init-asset');
+  res.render('gamblers/init-asset', {id:req.params.id});
 };
 
 exports.createAsset = function(req, res){

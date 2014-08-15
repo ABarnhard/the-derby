@@ -1,0 +1,24 @@
+extends ../shared/template
+block content
+  h2 Check this person out:
+  h2: a(href='/gamblers/#{gambler._id.toString()}/assets/new') Add an Item
+  .gambler(data-gambler-id=gambler._id.toString())
+    .photo(style='background-image:url(#{gambler.photo});')
+    .stats
+      .name: a(href='/gamblers/#{gambler._id}')= gambler.name
+      .cash $#{gambler.cash.toFixed(2)}
+      .results
+        ul
+          li Wins: #{gambler.results.wins}
+          li Losses: #{gambler.results.losses}
+    .spouse(style='background-image:url(#{gambler.spouse.photo});')
+      p(class='#{gambler.isDivorced ? "divorced" : "married"}').spouse-name= gambler.isDivorced ? 'DIVORCED' : gambler.spouse.name
+    each asset in gambler.assets
+      .asset(style='background-image:url(#{asset.photo});')
+        .info
+          ul
+            li.asset-name= asset.name
+            li $#{asset.value.toFixed(2)}
+
+block scripts
+

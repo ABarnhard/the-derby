@@ -1,0 +1,22 @@
+extends ../shared/template
+block content
+  h2 Create New Asset:
+  form(method='post', action='/gamblers/#{id}/assets/new')
+    table
+      tbody
+        tr
+          td Name
+          td: input(name='name', type='text', placeholder='Ronald Boberson')
+        tr
+          td Photo
+          td: input(name='photo', type='text', placeholder='http://www.example.com/boberson.jpg')
+        tr
+          td value
+          td: input(name='value', type='number', placeholder='1000')
+        tr
+          td(colspan='2'): button Add Asset
+
+
+block scripts
+
+
