@@ -6,19 +6,20 @@ block content
       each gambler in gamblers
         .gambler(data-gambler-id=gambler._id.toString())
           .photo(style='background-image:url(#{gambler.photo});')
-          .name= gambler.name
-          .cash $#{gambler.cash.toFixed(2)}
-          .results
-            ul
-              li Wins: #{gambler.results.wins}
-              li Losses: #{gambler.results.losses}
+          .stats
+            .name= gambler.name
+            .cash $#{gambler.cash.toFixed(2)}
+            .results
+              ul
+                li Wins: #{gambler.results.wins}
+                li Losses: #{gambler.results.losses}
           .spouse(style='background-image:url(#{gambler.spouse.photo});')
-            p.spouseName= gambler.spouse.name
+            p(class='#{gambler.isDivorced ? "divorced" : "married"}').spouse-name= gambler.isDivorced ? 'DIVORCED' : gambler.spouse.name
           each asset in gambler.assets
             .asset(style='background-image:url(#{asset.photo});')
               .info
                 ul
-                  li.name= asset.name
+                  li.asset-name= asset.name
                   li $#{asset.value.toFixed(2)}
 
 block scripts

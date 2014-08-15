@@ -49,8 +49,15 @@ nav li {
   border-radius: 20px;
 }
 
-.gambler div {
+.stats div {
+  margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.divorced {
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
 }
 
 .photo, .spouse {
@@ -64,7 +71,7 @@ nav li {
   height: 200px;
   background-size:cover;
   position: relative;
-  margin: 0 auto;
+  margin: 5px auto;
   border: 1px solid green;
 }
 

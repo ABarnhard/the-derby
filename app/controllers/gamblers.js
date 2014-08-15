@@ -21,9 +21,9 @@ exports.createAsset = function(req, res){};
 
 exports.liquidate = function(req, res){
   Gambler.findById(req.params.id, function(gambler){
-    console.log('gambler:', gambler);
+    //console.log('gambler:', gambler);
     gambler.liquidate(req.params.name, function(obj){
-      console.log('liquidate:', obj);
+      //console.log('liquidate:', obj);
       res.send(obj);
     });
   });
