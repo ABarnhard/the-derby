@@ -13,12 +13,12 @@ block content
               li Wins: #{gambler.results.wins}
               li Losses: #{gambler.results.losses}
           .spouse(style='background-image:url(#{gambler.spouse.photo});')
-            p= gambler.spouse.name
+            p.spouseName= gambler.spouse.name
           each asset in gambler.assets
             .asset(style='background-image:url(#{asset.photo});')
-              .info(data-asset-name=asset.name)
+              .info
                 ul
-                  li= asset.name
+                  li.name= asset.name
                   li $#{asset.value.toFixed(2)}
 
 block scripts

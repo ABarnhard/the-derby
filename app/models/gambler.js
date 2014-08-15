@@ -58,14 +58,14 @@ Gambler.prototype.acquire = function(o, cb){
 
 Gambler.all = function(cb){
   Gambler.collection.find().toArray(function(err, objs){
-    var gamblers = objs.map(function(o){return _.create(Gambler.prototype, 0);});
+    var gamblers = objs.map(function(o){return _.create(Gambler.prototype, o);});
     cb(gamblers);
   });
 };
 
 Gambler.findById = function(id, cb){
   id = Mongo.ObjectID(id);
-  Gambler.collection.findOne({}, function(err, obj){
+  Gambler.collection.findOne({_id:id}, function(err, obj){
     cb(_.create(Gambler.prototype, obj));
   });
 };
