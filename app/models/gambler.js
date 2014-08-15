@@ -30,11 +30,30 @@ Gambler.prototype.save = function(cb){
 
 Gambler.prototype.sellAsset = function(name){
   if(!this.assets.length){return;}
-
   var index = _.findIndex(this.assets, function(asset){return asset.name === name;}),
       sold  = this.assets.splice(index, 1)[0];
-
   this.cash += sold.value;
+};
+
+Gambler.prototype.liquidate = function(name, cb){
+  this.sellAsset(name);
+  var data = {id:this._id.toString(), name:name, cash:this.cash, isDivorced:this.isDivorced};
+  this.save(function(){
+    cb(data);
+  });
+};
+
+Gambler.prototype.addAsset = function(o){
+  o = strip(o);
+  o.name = o.name || 'Something';
+  o.photo = o.photo || 'http://www.oilersaddict.com/wp-content/uploads/2013/09/QuestionMarks.jpg';
+  o.value = (o.value) ? o.value * 1 : 0;
+  this.assets.push(o);
+};
+
+Gambler.prototype.acquire = function(o, cb){
+  this.addAsset(o);
+  this.save(cb);
 };
 
 Gambler.all = function(cb){
